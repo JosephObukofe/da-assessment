@@ -1,0 +1,10 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Load environment variables
+UNPROCESSED_USER_DATA = os.getenv("UNPROCESSED_USER_DATA")
+UNPROCESSED_TRANSACTION_DATA = os.getenv("UNPROCESSED_TRANSACTION_DATA")
+PROCESSED_USER_DATA = os.getenv("PROCESSED_USER_DATA")
+PROCESSED_TRANSACTION_DATA = os.getenv("PROCESSED_TRANSACTION_DATA")
